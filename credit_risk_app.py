@@ -39,7 +39,7 @@ def main():
     own_val  = st.selectbox("Home Ownership: Own (1=Yes, 0=No)",  [0, 1])  # 0 = no, 1 = yes
 
     cb_val   = st.selectbox("Previous Credit Default? (1=Yes, 0=No)", [0, 1]) # 0 = no, 1 = yes
-    person_emp_length  = st.number_input("Employment Length (Years", min_value=0, max_value=50, value=10)
+    person_emp_length  = st.number_input("Employment Length (Years)", min_value=0, max_value=50, value=10)
     loan_amnt_log = np.log1p(loan_amnt)        # log(loan_amnt + 1)
     person_income_log = np.log1p(annual_income)
 # 4. GENERATE PREDICTION WHEN BUTTON IS CLICKED
