@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # 1. LOAD THE PRE-TRAINED MODEL
-MODEL_PATH = r"C:\Users\saifa\OneDrive\Desktop\saif\credit_risk_model.pkl"
+MODEL_PATH = "credit_risk_model.pkl"
 
 def load_model():
    model = joblib.load(MODEL_PATH)
